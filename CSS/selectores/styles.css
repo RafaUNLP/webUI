@@ -1,0 +1,14 @@
+li {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.ingrediente-faltante {
+    color: red;
+    font-size: large;
+}
+
+#ingrediente-secreto{
+    color:green;
+    font-size: larger;
+}
