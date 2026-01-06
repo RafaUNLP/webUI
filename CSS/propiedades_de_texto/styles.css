@@ -1,0 +1,16 @@
+p {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    font-style: oblique;
+    text-align: left;
+    line-height: 200%;
+    text-transform: full-width;
+}
+
+.tachado{
+    text-decoration: line-through;
+    color: brown;
+    letter-spacing: 5px;
+}
