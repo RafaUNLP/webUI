@@ -1,0 +1,14 @@
+.importada_en_el_head{
+    font-family: Montserrat;
+    font-style: italic;
+}
+
+.importada_y_definida{
+    font-family: Personalizada;
+}
+
+@font-face {
+    font-family: Personalizada;
+    src: url(/acomodar_balem/fuentes/Roboto-Bold.ttf) format("truetype");
+    font-weight: 500;
+}
