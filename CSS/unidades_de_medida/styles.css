@@ -1,0 +1,33 @@
+html {
+    font-size: 10px;
+}
+
+.contenedor {
+    background: #ededed;
+    font-family: sans-serif;
+    padding: 20px;
+    border-left: 2px solid #999;
+    font-size: 20px;
+}
+
+.titulo {
+    margin: 0;
+
+}
+
+.mas-info {
+    color: #999;
+    font-size: 0.5em;
+    font-weight: 100;
+}
+
+.info {
+    color: #555;
+    font-size: 1em;
+}
+
+.info-rem {
+    font-size: 2rem;
+    color: #555;
+}
+
