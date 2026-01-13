@@ -1,0 +1,25 @@
+.box {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+
+.box-rgb {
+    background: rgb(100, 0, 100);
+}
+
+.box-hexadecimal {
+    background: #0bd2;
+}
+
+.box-hsl {
+    background-color: hsl(120, 40%, 75%);
+    color: hsl(120, 20%, 55%);
+    text-align: center;
+    border-top: 2px solid hsl(120, 20%, 55%);
+}
+
+p {
+    padding-top: 20%;
+    font-weight: bold;
+}
