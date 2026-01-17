@@ -2,17 +2,25 @@ html {
     font-size: 10px;
 }
 
+body {
+    margin: 0;
+}
+
 .contenedor {
     background: #ededed;
     font-family: sans-serif;
     padding: 20px;
     border-left: 2px solid #999;
     font-size: 20px;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .titulo {
     margin: 0;
-
+    font-size: 23px;
 }
 
 .mas-info {
