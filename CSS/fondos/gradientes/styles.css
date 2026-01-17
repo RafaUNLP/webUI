@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+}
+
+.tarjeta {
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+.tarjeta-lineal {
+    background-image: linear-gradient(to bottom,#f708,transparent);
+    border-top: 0.2rem solid #f70c;
+}
+
+.tarjeta-centrica {
+    background-image: radial-gradient(#2c28,transparent);
+    border-top: 0.2rem solid #2c2c;
+}
+
+.imagen-importante {
+    margin-left: 15%;
+    margin-top: 0.2rem;
+    width: 70%;
+    height: 300px;
+}
+
+.imagen-secundaria {
+    margin-left: 35%;
+    margin-top: 45%;
+    width: 30%;
+    height: 30%;
+}
+
+.titulo-importante {
+    text-align: center;
+    text-decoration: initial;
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+    font-size: 1.2rem;
+}
+
+.naranja {
+    color: #f70c;
+}
+
+.verde {
+    color: #0c08;
+}
