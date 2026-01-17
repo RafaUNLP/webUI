@@ -24,18 +24,21 @@
 
 body {
     font-family: 'oufit';
+    background: hsl(30, 54%, 90%);
+    color: hsl(30, 10%, 34%);
 }
 
 img {
     margin: auto;
     border-radius: 1rem;
+    width: 100%;
 }
 
 h1 {
     font-family: 'young serif';
-    font-weight: bold;
     color: hsl(24, 5%, 18%);
     text-transform: capitalize;
+    margin-bottom: 0;
 }
 
 h2{
@@ -45,7 +48,73 @@ h2{
 }
 
 h3{
-    font-family: 'young-serif';
+    font-family: 'outfit';
     font-weight: bold;
-    color: hsl(298, 50%, 30%)
+    color: hsl(298, 45%, 30%);
+    margin: 0;
+    padding-left: 1rem;
+}
+
+p, li{
+    font-family: 'outfit';
+    font-weight: 400;
+}
+
+li {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr {
+    border-bottom-color: hsl(30, 10%, 34%);
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+.card {
+    margin: auto;
+    width: 50%;
+    margin-top: 100px;
+    margin-bottom: 12%;
+    background: hsl(0, 0%, 100%);
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+.quantities {
+    font-family: 'outfit';
+    font-weight: bold;
+    color: hsl(14, 45%, 36%);
+}
+
+.preparation-time {
+    background: hsl(298, 40%, 98%);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    border-radius: 1rem;
+}
+
+.preparation-time li::marker {
+    color: hsl(298, 45%, 30%);
+}
+
+.border-bottom {
+    border-bottom-color: hsl(30, 10%, 34%);
+    border-bottom-style: solid;
+    border-bottom-width: thin;
 }
