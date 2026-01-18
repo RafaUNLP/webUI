@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+
+.box {
+    width: 280px;
+    background-color: #e2e2e2;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 0 0 45px 0 #0007;
+    padding: 20px;
+    padding-top: 10px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: #444;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    color: #999;
+    letter-spacing: 3px;
+    font-weight: 100;
+    text-shadow: 0 0 2px #f80f;
+
+}
+
+p {
+    list-style: none;
+    text-align: justify;
+    line-height: 1.4;
+    font-size: 0.8rem;
+    text-shadow: 0 0 5px #f70;
+}
+
+img {
+    width: 60%;
+    filter: drop-shadow(0 0 5px #f80f);
+}
