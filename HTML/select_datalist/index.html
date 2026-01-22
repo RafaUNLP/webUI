@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Textarea</title>
+</head>
+<body>
+    <form>
+        <h2>Formulario de contacto</h2>
+
+        <!--SELECT & OPTION-->
+        <div class="form_input">
+            <label for="user_type_select">Tipo de usuario</label>
+            <select name="type_of_user" id="user_type_select">
+                <option value="user1">Estudiante</option>
+                <option value="user2">Graduado</option>
+                <option value="user1">Otros</option>
+            </select>
+        </div>
+
+        <!--DATALIST & OPTION-->
+        <div class="form_input">
+            <label>Institución</label>
+            <input list="institution" name="institution">
+            <datalist id="institution" name="institution_options">
+                <option value="Universidad Nacional de La Plata">UNLP</option>
+                <option value="Universidad Católica de La Plata">UCALP</option>
+                <option value="Universidad de Palermo">UP</option>
+                <option>Otros</option>
+            </datalist>
+        </div>
+    </form>
+</body>
+</html>
