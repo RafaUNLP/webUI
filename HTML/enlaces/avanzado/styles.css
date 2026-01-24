@@ -1,0 +1,23 @@
+body {
+    color: #ddd;
+    background: linear-gradient(to bottom, #333, #000);
+    height: 100vh;
+}
+
+.label {
+    font-size: 0.88rem;
+}
+
+.checkbox {
+    width: auto;
+    margin-left: 0.5rem;
+}
+
+a {
+    color: #69f;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #d0ef;
+}
