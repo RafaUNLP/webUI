@@ -1,0 +1,28 @@
+td, th {
+    text-align: center;
+    padding: 0.3rem;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+tbody {
+    color: #555;
+}
+
+table {
+    width: 100%;
+    font-family: sans-serif;
+    border-spacing: 0.8rem;
+    max-width: 30rem;
+    margin: auto;
+    background-color: #eee6;
+    box-shadow: 0 0 3rem #aaa;
+}
+
+.dato-total, .header-total {
+    border: none;
+}
+
+.header-total {
+    font-weight: bold;
+}
