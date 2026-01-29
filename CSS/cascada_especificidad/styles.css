@@ -1,0 +1,23 @@
+h1 {
+    color: red;
+}
+
+h1 {
+    color: rebeccapurple;
+}
+
+.titulo {
+    color: blue;
+}
+
+#primero {
+    color: green;
+}
+
+#segundo {
+    color: green !important;
+}
+
+body #segundo {
+    color: lightblue !important;
+}
