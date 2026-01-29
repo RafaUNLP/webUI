@@ -1,0 +1,29 @@
+body {
+    color: red;
+    font-family: sans-serif;
+}
+
+div {
+    color: blue;
+    width: 80%;
+    border: 1px solid coral;
+    border-radius: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    margin: auto;
+    /*hereda el width del primer padre que tenga un valor en ella, ya sea explícito o por defecto*/
+    width: inherit;
+    /*toma el valor por defecto del navegador*/
+    font-family: initial;
+    /*como el border no se hereda por defecto, funciona como un 'initial*/
+    border: unset;
+    /*como el color se hereda por defecto, funciona como un 'inherit'*/
+    color: unset;
+}
+
+textarea {
+    /*hereda el font-family del <div> dado que el textearea tiene un valor por defecto que omite la herencia*/
+    font-family: inherit;
+}
