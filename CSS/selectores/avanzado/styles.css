@@ -1,0 +1,52 @@
+li {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.ingrediente-faltante {
+    color: red;}
+
+#ingrediente-secreto{
+    color:green;
+}
+
+/*Selector de atributo*/
+img[src$="png"] {
+    width: 25%;
+}
+
+/*Selector descendiente, también sirve con clases*/
+ul em {
+    color: #b099;
+}
+
+/*Selector por hijo directo*/
+li > em {
+    text-transform: uppercase;
+}
+
+/*Selector de hermano adyacente*/
+h1 + p {
+    color: coral;
+}
+
+h1 + p + h2 {
+    text-shadow: 0 0 1rem #952;
+}
+
+/*Selector de hermanos generales*/
+h1 ~ p {
+    font-style: italic;
+}
+
+h1 ~ h2 {
+    font-style: oblique;
+}
+
+/*Pruebas de combinaciones*/
+ul li > em[class="experimental"]{
+    border: 1px solid #952;
+}
+
+h1 ~ img[alt^="Logo"]{
+    border-radius: 100%;
+}
