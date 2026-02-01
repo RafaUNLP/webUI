@@ -1,0 +1,101 @@
+h1 {
+    color: #48e;
+    font-family: sans-serif;
+    margin: 2rem;
+}
+
+h1:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+h1:active {
+    color: #fff;
+}
+
+li {
+    background-color: #35af;
+}
+
+/*Seleccionado el primer <li>*/
+li:first-child {
+    color: red;
+}
+
+/*Seleccionado el tercer elemento entre los <li>,
+el cual no recibe estilos al no ser un <li>*/
+li:nth-child(3) {
+    color: #0d9f;
+}
+
+/*Seleccionando el tercer elemento entre los <li>
+sólo considerando aquellos que son de tipo <li>*/
+li:nth-of-type(3) {
+    color: #0f0;
+}
+
+/*Seleccionando cada dos <li>*/
+li:nth-child(2n) {
+    background-color: #6aff;
+}
+
+/*Seleccionando cada tres <li>*/
+li:nth-child(3n) {
+    color: #e60;
+}
+
+/*Seleccionando al último <li>*/
+li:last-child {
+    color: blue;
+}
+
+/*Al ser más específico, se aplica reemplazando al resto.
+Seleccionando a los elementos que NO cumplan con dicha condición*/
+/*.lista li:not(.excluir) {
+    color: #fff;
+}*/
+
+/*Seleccionando aquellos <ul> que están vacíos*/
+ul:empty {
+    background-color: #48e;
+    height: 2rem;
+}
+
+/*Seleccionando aquellos elementos de clase .checkbox que estén
+efectivamente confirmados, al posar el cursor sobre ellos*/
+.checkbox:checked:hover {
+    box-shadow: 0 0 2.5rem 1rem #663399;
+}
+
+/*Seleccionando aquellos inputs con type email cuando
+su contenido sea inválido*/
+input[type="email"]:invalid {
+    color: #f00;
+}
+
+/*Seleccionando aquellos inputs con type email cuando
+su contenido sea válido*/
+input[type="email"]:valid {
+    color: #080;
+}
+
+/*En vez de escribir 3 veces 'li .elem7' para cada clase,:is permite agrupar.
+A su vez, agrega especificidad (cosa que 'where' no hace, a pesar de funcionar
+de la misma forma)*/
+li:is(.elem7,.elem8,.elem9) {
+    text-decoration: line-through;
+}
+
+/*Selecciona aquellos lavel que contengan dentro un input
+cuyo contenido sea inválido*/
+label:has(input:valid) {
+    color: #080;
+    font-style: oblique;
+}
+
+/*Selecciona aquellos lavel que contengan dentro un input
+cuyo contenido sea válido*/
+label:has(input:invalid) {
+    color: #f00;
+    text-decoration: line-through;
+}
