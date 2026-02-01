@@ -1,0 +1,36 @@
+div {
+    padding: 1.25rem;
+}
+
+h1::first-letter {
+    color: red;
+    font-size: 3rem;
+}
+
+div::first-line {
+    color: blue;
+}
+
+div::selection {
+    background-color: green;
+    color: yellow;
+}
+
+input::placeholder {
+    font-style: oblique;
+    font-weight: bold;
+}
+
+li::marker {
+    color: blue;
+}
+
+li::before {
+    content: 'Elemento: ';
+    color: blue;
+}
+
+li::after {
+    content: '...';
+    color: blue;
+}
