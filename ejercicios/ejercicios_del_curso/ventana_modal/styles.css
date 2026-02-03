@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.modal {
+    background-color: #0009;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.modal__content {
+    background-color: #fff;
+    padding: 0.6rem 1.2rem;
+    width: 80%;
+    margin: auto;
+    margin-top: 3rem;
+    position: relative;
+}
+
+.modal__title {
+    margin-top: 0.6rem;
+    text-decoration: underline;
+}
+
+.modal__close-button {
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    padding: 0.15rem 0.4rem;
+}
