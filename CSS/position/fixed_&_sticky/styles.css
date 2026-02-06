@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.overlay {
+    background: linear-gradient(to top, #fff, transparent);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+}
+
+.container {
+    padding: 9rem;
+    background-color: blue;
+    position: relative;
+}
+
+.box {
+    height: 4rem;
+    width: 12rem;
+    background-color: #fff;
+    position: fixed;
+    right: 0;
+    border: 2px solid#000;
+    border-right: 0;
+    box-shadow: 0 0 3rem #000;
+    z-index: 30;
+}
+
+.box__title {
+    font-size: 1.15rem;
+    margin: 0;
+}
+
+.box__content {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.box-fixed {
+    height: 4rem;
+    width: 12rem;
+    background-color: red;
+    position: sticky;
+    top: 30px;
+    z-index: 40;
+}
+
+.first {
+    top: 100px;
+    background-color: rebeccapurple;
+}
+
+.last {
+    top: 170px;
+    background-color: blue;
+}
