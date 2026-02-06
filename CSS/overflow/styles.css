@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+    background-color: #0003;
+}
+
+.container {
+    display: flex;
+    gap: 1%;
+    width: 100%;
+    align-items: center;
+}
+
+.container__box {
+    width: 20%;
+    height: 20%;
+    max-height: 15rem;
+}
+
+.item {
+    background-color: #fff;
+    top: 3rem;
+    border: 2px solid #000;
+}
+
+.box--hidden {
+    overflow: hidden;
+}
+
+.box--clip {
+    overflow: clip;
+}
+
+.box--scroll {
+    overflow: scroll;
+}
+
+.box--auto {
+    overflow: auto;
+}
