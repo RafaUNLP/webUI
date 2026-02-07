@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.container__image {
+    width: 20rem;
+    height: 14rem;
+    margin-top: 0.5rem;
+    margin-left: 3rem;
+    border: 2px solid #000;
+}
+
+.image--contain {
+    object-fit: contain;
+}
+
+.image--none {
+    object-fit: none;
+}
+
+.image--scale-down {
+    object-fit: scale-down;
+}
+
+.image--cover {
+    object-fit: cover;
+}
+
+.image--top {
+    object-position: top;
+}
+
+.image--bottom {
+    object-position: bottom;
+}
+
+.image--custom {
+    object-position: 3rem 3rem;
+}
