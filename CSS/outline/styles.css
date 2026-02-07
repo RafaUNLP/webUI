@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+
+.box {
+    width: 10rem;
+    background-color: red;
+    margin: auto;
+    margin-top: 5rem;
+    border: 5px solid #000;
+    padding: 1.2rem;
+}
+
+.box:hover {
+    outline-width: 0.5rem;
+    outline-color: blue;
+    outline-style: dashed;
+    outline-offset: 0.8rem;
+}
+
+input {
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    border: none;
+    border-top: 0.2rem solid black;
+    outline: 0.2rem solid blue;
+    outline-offset: 0.9rem;
+    transition: outline 2s, outline-offset 2s;
+    padding: 0.3rem;
+}
+
+input:focus {
+    border-top-color: blue;
+}
+
+input:focus-visible {
+    outline: none;/*accesibility*/
+}
