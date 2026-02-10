@@ -21,10 +21,15 @@ body{
     color: #fff;
     font-size: 3rem;
     text-align: center;
+    width: 14rem;
 }
 
-.item--width {
-    width: 14rem;
+.item--order2{
+    order: 2;
+}
+
+.item--order3{
+    order: 3;
 }
 
 .flexbox__item:first-child {
