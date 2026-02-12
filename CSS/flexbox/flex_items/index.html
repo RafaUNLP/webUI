@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox: justify-content</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="flexbox">
+        <div class="flexbox__item item--basis item--grow2">1</div>
+        <div class="flexbox__item item--basis">2</div>
+        <div class="flexbox__item item--basis item--grow4">3</div>
+    </div>
+    <div class="flexbox">
+        <div class="flexbox__item item--basis item--shrink6 item--grow4">1</div>
+        <div class="flexbox__item item--basis item--shrink0">2</div>
+        <div class="flexbox__item item--basis item--shrink0 item--grow2">3</div>
+    </div>
+    <div class="flexbox flexbox--gap">
+        <div class="flexbox__item item--variable">1</div>
+        <div class="flexbox__item item--variable">2</div>
+        <div class="flexbox__item item--variable">3</div>
+        <div class="flexbox__item item--variable">4</div>
+    </div>
+    <div class="flexbox flexbox--columnn flexbox--gap">
+        <div class="flexbox__item item--static-width">1</div>
+        <div class="flexbox__item item--static-width">2</div>
+        <div class="flexbox__item item--static-width item--self-end">3</div>
+        <div class="flexbox__item item--static-width">4</div>
+    </div>
+</body>
+</html>
