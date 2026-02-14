@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div, body {
+    box-sizing: border-box;
+}
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 40rem;
+    margin: auto;
+}
+
+.bloque {
+    min-width: 10rem;
+    background-color: #7bf;
+    margin: auto;
+    flex-grow: 1;
+    flex-basis: 0;
+    font-size: 0.75rem;
+    padding: 0.6rem;
+    margin: 0.4rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.contenedor {
+    max-width: 100%;
+    aspect-ratio: 16/9;
+}
+
+video {
+    width: 100%;
+}
