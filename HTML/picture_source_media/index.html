@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Picture, Source & Media</title>
+</head>
+<body>
+    <picture>
+        <source src="../imagenes/gato.webp" type="image/webp">
+        <source media="(max-width: 300px)" srcset="../imagenes/perro-chico.jpg">
+        <source media="(max-width: 500px)" srcset="../imagenes/perro-mediano.jpg">
+        <img src="../imagenes/perro.jpg" alt="Imagen de un perro">
+    </picture>
+</body>
+</html>
