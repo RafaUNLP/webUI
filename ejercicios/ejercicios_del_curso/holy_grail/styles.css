@@ -82,6 +82,7 @@ main {
 
 .main-wrapper aside {
     flex-grow: 1;
+    flex-direction: column;
 }
 
 .secondary-navbar {
@@ -105,6 +106,7 @@ main {
 
 aside:last-child {
     min-width: 10rem;
+    display: none;
 }
 
 /* Footer Section*/
@@ -118,16 +120,16 @@ footer {
     text-align: center;
 }
 
-/* Media Querysc*/
+/* Media Querys*/
 
-@media screen and (max-width: 800px) {
-    aside:last-child {
-        display: none;
+@media screen and (min-width: 800px) {
+    .main-wrapper {
+        flex-direction: row;
     }
 }
 
-@media screen and (max-width: 500px) {
-    .main-wrapper {
-        flex-direction: column;
+@media screen and (min-width: 500px) {
+    aside:last-child {
+        display: block;
     }
 }
