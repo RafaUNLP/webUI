@@ -3,6 +3,10 @@ body {
     font-family: sans-serif;
 }
 
+body, div {
+    box-sizing: border-box;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 150px 150px auto;
@@ -23,5 +27,12 @@ body {
 
 .grid--fr {
     background-color: #333;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: repeat(2,1fr 2fr);
+}
+
+.grid--minmax {
+    height: 50vh;
+    background-color: #f5f5dc;
+    grid-template-columns: repeat(3, minmax(300px,600px));
+    grid-template-rows: repeat(2,200px) 1fr;
 }
