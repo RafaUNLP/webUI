@@ -1,0 +1,54 @@
+body {
+    background-color: #48e1;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.bar {
+    border-radius: 39px;
+    border: 3px solid #48e;
+    margin: auto;
+    background-color: #fff;
+    padding: 4px;
+    animation-name: change-border;
+}
+
+.bar__progress {
+    border-radius: 36px;
+    padding: 40px;
+    background-color: #48e;
+    width: 1%;
+    max-width: 100%;
+    animation-name: fill-bar;
+}
+
+.animation {
+    animation-duration: 2s;
+    animation-delay: -0.25s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.bar__progress:hover {
+    animation-play-state: paused;
+}
+
+@keyframes fill-bar{
+    from {
+        width: 1%;
+    }
+    to {
+        width: 100%;
+        background-color: #f33;
+    }
+}
+
+@keyframes change-border{
+    to {
+        border-color: #f33;
+    }
+}
