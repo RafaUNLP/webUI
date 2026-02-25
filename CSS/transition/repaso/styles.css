@@ -1,0 +1,42 @@
+body {
+    background-color: #48e1;
+}
+
+.bar {
+    border-radius: 39px;
+    border: 3px solid #48e;
+    margin: auto;
+    background-color: #fff;
+    padding: 4px;
+    box-sizing: border-box;
+    transition: border-color .6s linear;
+}
+
+.bar__progress {
+    border-radius: 36px;
+    padding: 40px;
+    background-color: #48e;
+    width: 1%;
+    max-width: 100%;
+    transition: width 1s steps(10), background-color 1s steps(10);
+    box-sizing: border-box;
+}
+
+.bar__progress:active {
+    width: 100%;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    background-color: #e22c;
+}
+
+.bar:active {
+    border-color: #d22c;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .bar, .bar__progress {
+        transition: none;
+    }
+}
