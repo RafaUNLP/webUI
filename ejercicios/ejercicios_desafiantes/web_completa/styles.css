@@ -16,7 +16,7 @@ body {
     color: #101632dd;
 }
 
-body, div, ul, nav, header, footer, a, li, label {
+body, div, ul, nav, footer, a, li, label {
     margin: 0;
     padding: 0;
 }
@@ -25,18 +25,16 @@ body, div, ul, nav, header, footer, a, li, label {
 
 .header {
     background-color: #fff;
+    color: #48e;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    container-type: inline-size;
-    container-name: header;
     position: sticky;
     z-index: 10;
     top: 0;
 }
 
 .header__open-nav-button {
-    color: #48e;
     font-size: 3rem;
     font-weight: 600;
     position: absolute;
@@ -82,7 +80,7 @@ body, div, ul, nav, header, footer, a, li, label {
 }
 
 .header__nav-item a {
-    color: #48e;
+    color: inherit;
 }
 
 .header__nav-item a:not(:is(:hover,:active)) {
@@ -91,13 +89,24 @@ body, div, ul, nav, header, footer, a, li, label {
 
 /* ------- HEADER QUERIES  ------- */
 
-@container header (min-width: 600px) {
+@media screen and (min-width: 600px) {
+
+    .header {
+        padding: 20px 0;
+        animation: header-movement both;
+        animation-timeline: scroll();
+        position: sticky;
+        top: 0;
+        animation-range: 10px 100px;
+    }
+
     .header__nav {
         display: block;
         position: static;
         height: auto;
         width: auto;
         justify-content: space-between;
+        background-color: initial;/*transparent by deault*/
     }
 
     .header__checkbox ~ .header__nav {
@@ -125,6 +134,7 @@ body, div, ul, nav, header, footer, a, li, label {
 .profile {
     container-type: inline-size;
     container-name: profile;
+    animation: appears 2.4s -.6s both;
 }
 
 .profile__wrapper {
@@ -283,6 +293,9 @@ h1 {
     display: grid;
     place-content: center;
     border-radius: 12px;
+    animation: appears both;
+    animation-timeline: view();
+    animation-range: cover 5% cover 40%;
 }
 
 .portfolio__project:hover {
@@ -335,6 +348,9 @@ h1 {
     padding: 30px 0;
     container-type: inline-size;
     container-name: form;
+    animation: appears both;
+    animation-timeline: view();
+    animation-range: cover 20% contain 40%;
 }
 
 .form__form {
@@ -425,3 +441,27 @@ footer {
 }
 
 /* ------- FOOTER ENDS  ------- */
+
+
+/* ------- ANIMATIONS  ------- */
+
+@keyframes header-movement {
+    from {
+        padding: 20px 0;
+        background-color: #fff;
+    }
+    to {
+        padding: 0;
+        background-color: #18233f66;
+        color: #fff;
+    }
+}
+
+@keyframes appears {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
