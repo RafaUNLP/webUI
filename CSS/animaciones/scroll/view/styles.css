@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    background-color: #CCC;
+    height: 200vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.grow {
+    height: 100vh;
+}
+
+
+.bar {
+    height: 200px;
+    view-timeline: --box block;
+    padding: 20px;
+    animation: fill-bar;
+    animation-fill-mode: both;
+    animation-timeline: --box;
+    animation-range-start: cover 30%;
+    animation-range-end: contain 85%;
+}
+
+.bar__progress:active {
+    animation-play-state: paused;
+}
+
+@keyframes fill-bar{
+    from {
+        width: 1%;
+        background-color:#48e;
+        opacity: 0.1;
+    }
+    to {
+        width: 100%;
+        background-color: #f33;
+        opacity: 1;
+    }
+}
