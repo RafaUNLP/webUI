@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 0;
+}
+
+.box {
+    background-color: #48e;
+    display: grid;
+    place-content: center;
+    color: #fff;
+    margin: 120px auto;
+    font-size: 2rem;
+    padding: 0 40px;
+}
+
+.box:first-child {
+    width: min(300px,30%);
+}
+
+.box:nth-child(2) {
+    width: max(300px,30%);
+}
+
+.box:nth-child(3) {
+    width: clamp(800px,100%,1400px);
+    font-size: clamp(2rem,2vw,5rem);
+}
