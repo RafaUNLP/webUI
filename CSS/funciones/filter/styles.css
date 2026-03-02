@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    box-sizing: border-box;
+    margin: 1rem auto;
+    background-color: #82ad;
+    max-width: 600px;
+}
+
+img {
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.box:first-child > img {
+    filter: drop-shadow(0px 0px 15px #000);
+}
+
+.box:nth-child(2) > img {
+    filter: blur(10px);
+}
+
+.box:nth-child(3) {
+    filter: brightness(1.4);
+}
+
+.box:nth-child(4) > img {
+    filter: contrast(2);
+}
+
+.box:nth-child(5) > img {
+    filter: grayscale(0.5);
+}
+
+.box:nth-child(6) > img {
+    filter: saturate(2.5);
+}
+
+.box:nth-child(7) > img {
+    filter: hue-rotate(120deg)
+}
+
+.box:nth-child(8) {
+    background-image: url("./../../../HTML/imagenes/gato.webp");
+}
+
+.box:nth-child(8) > img {
+    backdrop-filter: blur(5px) brightness(1.5);
+}
+
+.box:nth-child(9) > img {
+    filter: opacity(100);
+}
+
+.box:nth-child(10) > img {
+    filter: invert(0.6);
+}
