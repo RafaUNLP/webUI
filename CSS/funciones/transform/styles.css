@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #0003;
+}
+
+.box {
+    box-sizing: border-box;
+    margin: 1rem auto;
+    border: 49x solid #000;
+    width: fit-content;
+}
+
+img {
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.box:first-child > img {
+    transform: scale(1.5);
+}
+
+.box:nth-child(2){
+    transform: skew(-25deg);
+}
+
+.box:nth-child(3) {
+    transition: transform 1s;
+}
+
+.box:nth-child(3):hover {
+    transform: rotate(180deg);
+}
+
+.box:nth-child(4) > img {
+    transform: translate(-100px, -200px);
+}
