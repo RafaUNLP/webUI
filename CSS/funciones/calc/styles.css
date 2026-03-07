@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --alto-del-box: 200px;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 0;
+}
+
+.box {
+    font-size: 30px;
+    padding: 0 40px;
+    font-size: clamp(2.4rem,2.2vw,4rem);
+    border: 6px solid #000;
+}
+
+.box:first-child {
+    height: var(--alto-del-box);/*ocupa 200px*/
+}
+
+.box:nth-child(2) {
+    height: calc(100vh - var(--alto-del-box));/*ocupa todo menos los que requiere el elemento previo*/
+    overflow: auto;
+}

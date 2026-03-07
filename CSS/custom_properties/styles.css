@@ -42,7 +42,7 @@ body > p {
     font-size: 60px;
 }
 
-@property --color-secundario {
+@property --color-secundario { /*para todo el documento*/
     syntax: "<color>";
     inherits: false;
     initial-value: #48e;
