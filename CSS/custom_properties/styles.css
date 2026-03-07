@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    padding: 20px;
+    --tamaño-principal: 2.4rem;
+    --color-principal: #48e;/*aplica dentro del body*/
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 0;
+}
+
+.box {
+    --color-principal: #f44;/*sobrescribe para los box*/
+    display: grid;
+    place-content: center;
+    color: #fff;
+    margin: 120px auto;
+    font-size: 2rem;
+    padding: 0 40px;
+    font-size: clamp(var(--tamaño-principal),2.2vw,4rem);
+    border: 6px solid #000;
+}
+
+.box:first-child {
+    background-color: var(--color-principal);
+}
+
+.box:nth-child(2) {
+    --color-principal: #4f4;/*sobrecribe para el 2do elemento box*/
+    color: var(--color-principal);
+    border: 6px solid var(--color-principal);
+}
+
+body > p {
+    color: var(--color-principal);
+    font-size: 60px;
+}
+
+@property --color-secundario {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #48e;
+}
