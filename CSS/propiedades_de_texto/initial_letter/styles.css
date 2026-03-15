@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: monospace;
+}
+
+.box {
+    font-size: 30px;
+    padding: 0 40px;
+}
+
+p::first-letter {
+    initial-letter: 5 3;
+    color: rebeccapurple;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
