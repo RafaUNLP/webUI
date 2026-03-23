@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Sidebar project</title>
+</head>
+<body>
+    <aside class="sidebar">
+        <form class="sidebar__form">
+            <input type="checkbox" id="open-menu"><!--checkbox technique-->
+            <label class="material-symbols-outlined" for="open-menu">close</label>
+        </form>
+        <picture class="sidebar__picture">
+            <source srcset="https://pages.payoneer.com/wp-content/uploads/64f44aef233beaba81890b9d_ada13-logo-9.png.webp" type="image/webp" media="(max-width:57.5rem)">
+            <img src="../../../HTML/imagenes/logo-ada-13.png" alt="ADA13 logo">
+        </picture>
+        <nav class="sidebar__nav">
+            <ul>
+                <li class="sidebar__item">
+                    <span class="material-symbols-outlined">Notifications</span>
+                    <a href="#">Notifications</a>
+                </li>
+                <li class="sidebar__item">
+                    <span class="material-symbols-outlined">Mail</span>
+                    <a href="#">Messages</a>
+                </li>
+                <li class="sidebar__item">
+                    <span class="material-symbols-outlined">Shopping_cart</span>
+                    <a href="#">Cart</a>
+                </li>
+                <li class="sidebar__item">
+                    <span class="material-symbols-outlined">Account_balance</span>
+                    <a href="#">Balance</a>
+                </li>
+                <li class="sidebar__item">
+                    <span class="material-symbols-outlined">Settings</span>
+                    <a href="#">Settings</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="sidebar__profile">
+            <ul>
+                <li class="sidebar__item item--profile">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxKepU4OV3p-C0kQ1hjpemNf5kjJpv69PVpg&s" alt="Profile's picture">
+                    <span class="profile--option">Profile</span>
+                </li>
+                <li class="sidebar__item">
+                    <span class="material-symbols-outlined">Logout</span>
+                    <a href="#">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+</body>
+</html>
+<!--
+
+https://pages.payoneer.com/wp-content/uploads/64f44aef233beaba81890b9d_ada13-logo-9.png.webp
+
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxKepU4OV3p-C0kQ1hjpemNf5kjJpv69PVpg&s
+-->
