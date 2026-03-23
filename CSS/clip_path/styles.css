@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: montserrat;
+    background-color: #fff;
+}
+
+img {
+    max-width: 100%;
+    clip-path: circle(30% at 50% 50%);
+}
+
+img:nth-of-type(2) {
+    clip-path: ellipse(30% 60%);
+}
+
+img:nth-of-type(3) {
+    clip-path: polygon(47% 29%, 0% 100%, 88% 78%);
+}
